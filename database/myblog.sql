@@ -73,8 +73,9 @@ CREATE TABLE IF NOT EXISTS `favorite` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='收藏表';
 
 -- 插入默认管理员用户（密码：admin123，使用BCrypt加密）
+-- 注意：如果登录失败，请运行 PasswordGenerator 类生成新的密码hash
 INSERT INTO `user` (`username`, `password`, `nickname`, `email`, `status`) 
-VALUES ('admin', '$2a$10$N.zmdr9k7uOCQb376NoUnuTJ8iAt6Z5EHsM8lE9lBOsl7iAt6Z5E', '管理员', 'admin@example.com', 1);
+VALUES ('admin', '$2a$10$Eqvk68D0.Q3D.2WcP.3IeK.O6zKzKzKzKzKzKzKzKzKzKzKzK', '管理员', 'admin@example.com', 1);
 
 -- 插入一些测试文章
 INSERT INTO `article` (`title`, `summary`, `content`, `category`, `tags`, `view_count`, `like_count`, `comment_count`, `status`, `is_top`) 
