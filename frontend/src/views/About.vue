@@ -101,7 +101,7 @@
         <!-- 时间线 -->
         <section class="timeline-section fade-in">
           <h2 class="section-title">
-            <el-icon"><Clock /></el-icon>
+            <el-icon><Timer /></el-icon>
             关于博客
           </h2>
           <div class="timeline">
